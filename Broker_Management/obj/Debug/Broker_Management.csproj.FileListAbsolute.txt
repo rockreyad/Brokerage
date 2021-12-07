@@ -1,0 +1,59 @@
+L:\Development\Visual_Studio\Broker_Management\Broker_Management\bin\Debug\Broker_Management.exe.config
+L:\Development\Visual_Studio\Broker_Management\Broker_Management\bin\Debug\Broker_Management.exe
+L:\Development\Visual_Studio\Broker_Management\Broker_Management\bin\Debug\Broker_Management.pdb
+L:\Development\Visual_Studio\Broker_Management\Broker_Management\obj\Debug\Broker_Management.csproj.AssemblyReference.cache
+L:\Development\Visual_Studio\Broker_Management\Broker_Management\obj\Debug\Broker_Management.csproj.SuggestedBindingRedirects.cache
+L:\Development\Visual_Studio\Broker_Management\Broker_Management\obj\Debug\Broker_Management.Properties.Resources.resources
+L:\Development\Visual_Studio\Broker_Management\Broker_Management\obj\Debug\Broker_Management.csproj.GenerateResource.cache
+L:\Development\Visual_Studio\Broker_Management\Broker_Management\obj\Debug\Broker_Management.csproj.CoreCompileInputs.cache
+L:\Development\Visual_Studio\Broker_Management\Broker_Management\obj\Debug\Broker_Management.exe
+L:\Development\Visual_Studio\Broker_Management\Broker_Management\obj\Debug\Broker_Management.pdb
+L:\Development\Visual_Studio\Broker_Management\Broker_Management\bin\Debug\FontAwesome.Sharp.dll
+L:\Development\Visual_Studio\Broker_Management\Broker_Management\obj\Debug\Broker_Management.csproj.CopyComplete
+L:\Development\Visual_Studio\Broker_Management\Broker_Management\obj\Debug\Broker_Management.AddClient.resources
+L:\Development\Visual_Studio\Broker_Management\Broker_Management\obj\Debug\Broker_Management.Dashboard.resources
+L:\Development\Visual_Studio\Broker_Management\Broker_Management\obj\Debug\Broker_Management.Record.resources
+L:\Development\Visual_Studio\Broker_Management\Broker_Management\obj\Debug\Broker_Management.ClientList.resources
+L:\Development\Visual_Studio\Broker_Management\Broker_Management\obj\Debug\Broker_Management.TransactionList.resources
+L:\Development\Visual_Studio\Broker_Management\Broker_Management\obj\Debug\Broker_Management.Finance.resources
+L:\Development\Visual_Studio\Broker_Management\Broker_Management\obj\Debug\Broker_Management.LoginForm.resources
+D:\19203022 DON'T DELETE\Broker_Management-main\Broker_Management-main\Broker_Management\Broker_Management\bin\Debug\Broker_Management.exe.config
+D:\19203022 DON'T DELETE\Broker_Management-main\Broker_Management-main\Broker_Management\Broker_Management\bin\Debug\Broker_Management.exe
+D:\19203022 DON'T DELETE\Broker_Management-main\Broker_Management-main\Broker_Management\Broker_Management\bin\Debug\Broker_Management.pdb
+D:\19203022 DON'T DELETE\Broker_Management-main\Broker_Management-main\Broker_Management\Broker_Management\bin\Debug\FontAwesome.Sharp.dll
+D:\19203022 DON'T DELETE\Broker_Management-main\Broker_Management-main\Broker_Management\Broker_Management\obj\Debug\Broker_Management.csprojAssemblyReference.cache
+D:\19203022 DON'T DELETE\Broker_Management-main\Broker_Management-main\Broker_Management\Broker_Management\obj\Debug\Broker_Management.AddClient.resources
+D:\19203022 DON'T DELETE\Broker_Management-main\Broker_Management-main\Broker_Management\Broker_Management\obj\Debug\Broker_Management.ClientList.resources
+D:\19203022 DON'T DELETE\Broker_Management-main\Broker_Management-main\Broker_Management\Broker_Management\obj\Debug\Broker_Management.Dashboard.resources
+D:\19203022 DON'T DELETE\Broker_Management-main\Broker_Management-main\Broker_Management\Broker_Management\obj\Debug\Broker_Management.Finance.resources
+D:\19203022 DON'T DELETE\Broker_Management-main\Broker_Management-main\Broker_Management\Broker_Management\obj\Debug\Broker_Management.LoginForm.resources
+D:\19203022 DON'T DELETE\Broker_Management-main\Broker_Management-main\Broker_Management\Broker_Management\obj\Debug\Broker_Management.Properties.Resources.resources
+D:\19203022 DON'T DELETE\Broker_Management-main\Broker_Management-main\Broker_Management\Broker_Management\obj\Debug\Broker_Management.Record.resources
+D:\19203022 DON'T DELETE\Broker_Management-main\Broker_Management-main\Broker_Management\Broker_Management\obj\Debug\Broker_Management.TransactionList.resources
+D:\19203022 DON'T DELETE\Broker_Management-main\Broker_Management-main\Broker_Management\Broker_Management\obj\Debug\Broker_Management.csproj.GenerateResource.cache
+D:\19203022 DON'T DELETE\Broker_Management-main\Broker_Management-main\Broker_Management\Broker_Management\obj\Debug\Broker_Management.csproj.CopyComplete
+D:\19203022 DON'T DELETE\Broker_Management-main\Broker_Management-main\Broker_Management\Broker_Management\obj\Debug\Broker_Management.exe
+D:\19203022 DON'T DELETE\Broker_Management-main\Broker_Management-main\Broker_Management\Broker_Management\obj\Debug\Broker_Management.pdb
+L:\Development\Visual_Studio\Broker_Management\Broker_Management\bin\Debug\System.Data.SqlClient.dll
+L:\Development\Visual_Studio\Broker_Management\Broker_Management\bin\Debug\System.Data.SqlClient.xml
+L:\Development\Visual_Studio\Broker_Management\bin\Debug\Broker_Management.exe.config
+L:\Development\Visual_Studio\Broker_Management\bin\Debug\Broker_Management.exe
+L:\Development\Visual_Studio\Broker_Management\bin\Debug\Broker_Management.pdb
+L:\Development\Visual_Studio\Broker_Management\bin\Debug\FontAwesome.Sharp.dll
+L:\Development\Visual_Studio\Broker_Management\bin\Debug\System.Data.SqlClient.dll
+L:\Development\Visual_Studio\Broker_Management\bin\Debug\System.Data.SqlClient.xml
+L:\Development\Visual_Studio\Broker_Management\obj\Debug\Broker_Management.csproj.AssemblyReference.cache
+L:\Development\Visual_Studio\Broker_Management\obj\Debug\Broker_Management.csproj.SuggestedBindingRedirects.cache
+L:\Development\Visual_Studio\Broker_Management\obj\Debug\Broker_Management.AddClient.resources
+L:\Development\Visual_Studio\Broker_Management\obj\Debug\Broker_Management.ClientList.resources
+L:\Development\Visual_Studio\Broker_Management\obj\Debug\Broker_Management.Dashboard.resources
+L:\Development\Visual_Studio\Broker_Management\obj\Debug\Broker_Management.Finance.resources
+L:\Development\Visual_Studio\Broker_Management\obj\Debug\Broker_Management.LoginForm.resources
+L:\Development\Visual_Studio\Broker_Management\obj\Debug\Broker_Management.Properties.Resources.resources
+L:\Development\Visual_Studio\Broker_Management\obj\Debug\Broker_Management.Record.resources
+L:\Development\Visual_Studio\Broker_Management\obj\Debug\Broker_Management.TransactionList.resources
+L:\Development\Visual_Studio\Broker_Management\obj\Debug\Broker_Management.csproj.GenerateResource.cache
+L:\Development\Visual_Studio\Broker_Management\obj\Debug\Broker_Management.csproj.CoreCompileInputs.cache
+L:\Development\Visual_Studio\Broker_Management\obj\Debug\Broker_Management.csproj.CopyComplete
+L:\Development\Visual_Studio\Broker_Management\obj\Debug\Broker_Management.exe
+L:\Development\Visual_Studio\Broker_Management\obj\Debug\Broker_Management.pdb
