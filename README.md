@@ -9,9 +9,9 @@ Can get Profit idea from Finance Section.
 
 Connects to Sql Database File.
 
-Screenshots
+*User InterFace*
 ![Screenshot](Screenshot/dashboard.png)
-![Screenshot](addclient.png)
-![Screenshot](record.png)
-![Screenshot](transactionList.png)
-![Screenshot](clientList.png)
+![Screenshot](Screenshot/addclient.png)
+![Screenshot](Screenshot/record.png)
+![Screenshot](Screenshot/transactionList.png)
+![Screenshot](Screenshot/clientList.png)
