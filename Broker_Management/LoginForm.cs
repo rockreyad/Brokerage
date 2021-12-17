@@ -13,7 +13,7 @@ namespace Broker_Management
 {
     public partial class LoginForm : Form
     {
-        string ConStr = @"Data Source=NARCDEV;Initial Catalog=BrokerageDB;Integrated Security=true";
+        string ConStr = @"Data Source=NARCDEV;Initial Catalog=Brokerage;Integrated Security=true";
         SqlConnection con;
         SqlDataReader dr;
         public LoginForm()
@@ -69,9 +69,9 @@ namespace Broker_Management
             string password = textBoxPassword.Text;
 
             string query = @"SELECT 
-      [username]
-      ,[password]
-  FROM [dbo].[Login_Broker] Where username ='"+username+"' AND password='"+password+"'";
+      [userName]
+      ,[userPassword]
+  FROM [dbo].[admin_login_info] Where userName ='" + username+"' AND userPassword='"+password+"'";
             con.Open();
             SqlCommand cmd = new SqlCommand(query, con);
             dr = cmd.ExecuteReader();
