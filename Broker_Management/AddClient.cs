@@ -9,11 +9,26 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using System.Data.SqlClient;
+
 namespace Broker_Management
 {
     public partial class AddClient : Form
     {
-        Timer timer = new Timer();
+        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Development\Visual_Studio\Brokerage\Database\BrokerDbase.mdf;Integrated Security=True;Connect Timeout=30");
+        private void InsertClient()
+        {
+            Con.Open();
+            SqlCommand cmd = new SqlCommand("insert into ClientInfo(fullName,fathersName,mothersName,phone,address,postalCode) values(@fullName,@fName,@mName,@phone,@address,@postal)", Con);
+            cmd.Parameters.AddWithValue("@fullName", textBoxFullName.Text);
+            cmd.Parameters.AddWithValue("@fName", textBoxfName.Text);
+            cmd.Parameters.AddWithValue("@mName", textBoxmName.Text);
+            cmd.Parameters.AddWithValue("@phone", textBoxPhone.Text);
+            cmd.Parameters.AddWithValue("@address", textBoxAddress.Text);
+            cmd.Parameters.AddWithValue("@postal", textBoxZip.Text);
+            cmd.ExecuteNonQuery();
+            Con.Close();
+        }
         //Fileds
         private int borderSize = 2;
 
@@ -412,6 +427,9 @@ namespace Broker_Management
             }
         }
 
-
+        private void buttonSubmit_Click(object sender, EventArgs e)
+        {
+            InsertClient();
+        }
     }
 }

@@ -13,7 +13,7 @@ namespace Broker_Management
 {
     public partial class LoginForm : Form
     {
-        string ConStr = @"Data Source=NARCDEV;Initial Catalog=Brokerage;Integrated Security=true";
+        string ConStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Development\Visual_Studio\Brokerage\Database\BrokerDbase.mdf;Integrated Security=True;Connect Timeout=30";
         SqlConnection con;
         SqlDataReader dr;
         public LoginForm()
@@ -71,7 +71,7 @@ namespace Broker_Management
             string query = @"SELECT 
       [userName]
       ,[userPassword]
-  FROM [dbo].[admin_login_info] Where userName ='" + username+"' AND userPassword='"+password+"'";
+  FROM [dbo].[BrokerLoginInfo] Where userName ='" + username+ "' AND userPassword='" + password+"'";
             con.Open();
             SqlCommand cmd = new SqlCommand(query, con);
             dr = cmd.ExecuteReader();

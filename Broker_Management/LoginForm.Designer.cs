@@ -56,7 +56,7 @@
             this.label1.Location = new System.Drawing.Point(35, 188);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(195, 25);
-            this.label1.TabIndex = 1;
+            this.label1.TabIndex = 6;
             this.label1.Text = "START FOR FREE";
             // 
             // label2
@@ -67,7 +67,7 @@
             this.label2.Location = new System.Drawing.Point(35, 240);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(282, 33);
-            this.label2.TabIndex = 1;
+            this.label2.TabIndex = 7;
             this.label2.Text = "Login To Your Account";
             // 
             // buttonSignIn
@@ -83,7 +83,7 @@
             this.buttonSignIn.Location = new System.Drawing.Point(41, 481);
             this.buttonSignIn.Name = "buttonSignIn";
             this.buttonSignIn.Size = new System.Drawing.Size(276, 48);
-            this.buttonSignIn.TabIndex = 5;
+            this.buttonSignIn.TabIndex = 4;
             this.buttonSignIn.Text = "Quick Sign In";
             this.buttonSignIn.UseVisualStyleBackColor = false;
             this.buttonSignIn.Click += new System.EventHandler(this.buttonSignIn_Click);
@@ -112,6 +112,7 @@
             this.iconButtonClose.Name = "iconButtonClose";
             this.iconButtonClose.Size = new System.Drawing.Size(30, 30);
             this.iconButtonClose.TabIndex = 5;
+            this.iconButtonClose.TabStop = false;
             this.iconButtonClose.UseVisualStyleBackColor = true;
             this.iconButtonClose.Click += new System.EventHandler(this.iconButtonClose_Click);
             // 
@@ -143,7 +144,7 @@
             this.iconButtonShowPass.Location = new System.Drawing.Point(238, 8);
             this.iconButtonShowPass.Name = "iconButtonShowPass";
             this.iconButtonShowPass.Size = new System.Drawing.Size(30, 30);
-            this.iconButtonShowPass.TabIndex = 4;
+            this.iconButtonShowPass.TabIndex = 3;
             this.iconButtonShowPass.UseVisualStyleBackColor = false;
             this.iconButtonShowPass.Click += new System.EventHandler(this.iconButtonShowPass_Click);
             // 
@@ -157,7 +158,7 @@
             this.textBoxPassword.MaxLength = 10;
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(180, 25);
-            this.textBoxPassword.TabIndex = 3;
+            this.textBoxPassword.TabIndex = 2;
             this.textBoxPassword.Text = "Enter Password";
             this.textBoxPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBoxPassword.UseSystemPasswordChar = true;
@@ -203,8 +204,8 @@
             this.textBoxUsername.Location = new System.Drawing.Point(48, 12);
             this.textBoxUsername.MaxLength = 20;
             this.textBoxUsername.Name = "textBoxUsername";
-            this.textBoxUsername.Size = new System.Drawing.Size(214, 25);
-            this.textBoxUsername.TabIndex = 2;
+            this.textBoxUsername.Size = new System.Drawing.Size(180, 25);
+            this.textBoxUsername.TabIndex = 1;
             this.textBoxUsername.Text = "ENTER USERNAME";
             this.textBoxUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBoxUsername.WordWrap = false;

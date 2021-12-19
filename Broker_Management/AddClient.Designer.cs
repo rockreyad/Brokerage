@@ -511,6 +511,7 @@
             this.buttonSubmit.TabIndex = 1;
             this.buttonSubmit.Text = "SUBMIT";
             this.buttonSubmit.UseVisualStyleBackColor = true;
+            this.buttonSubmit.Click += new System.EventHandler(this.buttonSubmit_Click);
             // 
             // textBoxZip
             // 
