@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -13,7 +14,9 @@ namespace Broker_Management
 {
     public partial class Record : Form
     {
-        Timer timer = new Timer();
+        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Development\Visual_Studio\Brokerage\Database\BrokerDbase.mdf;Integrated Security=True;Connect Timeout=30");
+
+
         //Fileds
         private int borderSize = 2;
 
@@ -23,59 +26,48 @@ namespace Broker_Management
             InitializeComponent();
             this.Padding = new Padding(borderSize); //BorderSize
             this.BackColor = Color.FromArgb(255, 255, 255); //BorderColor
+            GetClient();
+        }
+
+        private void GetClient()
+        {
+            Con.Open();
+            SqlCommand cmd = new SqlCommand("select * from ClientInfo", Con);
+            SqlDataReader dr;
+            dr= cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Columns.Add("clientID", typeof(int));
+            dt.Load(dr);
+            comboBoxClient.ValueMember = "clientID";
+            comboBoxClient.DataSource = dt;
+            Con.Close();
+        }
+        private void InsertTransaction()
+        {
+            int dealAmmount = Int32.Parse(textBoxAmount.Text);
+            float fee = Int32.Parse(textBoxFee.Text);
+            float profitCal = dealAmmount * (fee / 100) ;
+            string profit = Convert.ToString(profitCal);
+
+            Con.Open();
+            SqlCommand cmd = new SqlCommand("insert into RecordInfo(clientName,purpose,dealAmmount,fee,profit) values(@clientName,@purpose,@dealAmmount,@fee,@profit)", Con);
+            cmd.Parameters.AddWithValue("@clientName", comboBoxClient.Text);
+            cmd.Parameters.AddWithValue("@purpose", textBoxPurpose.Text);
+            cmd.Parameters.AddWithValue("@dealAmmount", textBoxAmount.Text);
+            cmd.Parameters.AddWithValue("@fee", textBoxFee.Text);
+            cmd.Parameters.AddWithValue("@profit", profit);
+            cmd.ExecuteNonQuery();
+            Con.Close();
+            MessageBox.Show("New Record Added!");
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //timer interval
-            timer.Interval = 1000; // in milliseconds
-            timer.Tick += new EventHandler(this.timer_Tick);
 
-            //start timer when form loads
-            timer.Start(); //this will use timer_Tick() method
         }
 
         //timer eventhandler
-        private void timer_Tick(object sender, EventArgs e)
-        {
-            //get current time
-            int hh = DateTime.Now.Hour;
-            int mm = DateTime.Now.Minute;
-            int ss = DateTime.Now.Second;
-
-            //time
-            string time = "";
-
-            //padding leading zero
-            if (hh < 10)
-            {
-                time += "0" + hh;
-            }
-            else
-            {
-                time += hh;
-            }
-            time += ":";
-            if (mm < 10)
-            {
-                time += "0" + mm;
-            }
-            else
-            {
-                time += mm;
-            }
-            time += ":";
-            if (ss < 10)
-            {
-                time += "0" + ss;
-            }
-            else
-            {
-                time += ss;
-            }
-
-            //Update label
-        }
+       
 
         //Drag Form
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -417,6 +409,9 @@ namespace Broker_Management
             }
         }
 
-
+        private void buttonAdd_Click(object sender, EventArgs e)
+        {
+            InsertTransaction();
+        }
     }
 }

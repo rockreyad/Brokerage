@@ -28,6 +28,7 @@ namespace Broker_Management
             cmd.Parameters.AddWithValue("@postal", textBoxZip.Text);
             cmd.ExecuteNonQuery();
             Con.Close();
+            MessageBox.Show("New Client Added!");
         }
         //Fileds
         private int borderSize = 2;

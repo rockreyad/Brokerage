@@ -54,9 +54,9 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBoxClient = new System.Windows.Forms.ComboBox();
             this.buttonTransactions = new System.Windows.Forms.Button();
-            this.buttonSubmit = new System.Windows.Forms.Button();
+            this.buttonAdd = new System.Windows.Forms.Button();
             this.textBoxFee = new System.Windows.Forms.TextBox();
             this.textBoxAmount = new System.Windows.Forms.TextBox();
             this.textBoxPurpose = new System.Windows.Forms.TextBox();
@@ -474,9 +474,9 @@
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.BackgroundImage = global::Broker_Management.Properties.Resources.Rectangle_91;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Controls.Add(this.comboBox1);
+            this.panel2.Controls.Add(this.comboBoxClient);
             this.panel2.Controls.Add(this.buttonTransactions);
-            this.panel2.Controls.Add(this.buttonSubmit);
+            this.panel2.Controls.Add(this.buttonAdd);
             this.panel2.Controls.Add(this.textBoxFee);
             this.panel2.Controls.Add(this.textBoxAmount);
             this.panel2.Controls.Add(this.textBoxPurpose);
@@ -491,23 +491,18 @@
             this.panel2.TabIndex = 0;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // comboBox1
+            // comboBoxClient
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 16F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Reyad Hasan",
-            "Siam",
-            "Maruf Ahmed",
-            "Dinoy fahim",
-            "Nazmul Kabir"});
-            this.comboBox1.Location = new System.Drawing.Point(44, 53);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(242, 33);
-            this.comboBox1.TabIndex = 4;
+            this.comboBoxClient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.comboBoxClient.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxClient.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 16F);
+            this.comboBoxClient.FormattingEnabled = true;
+            this.comboBoxClient.Location = new System.Drawing.Point(44, 53);
+            this.comboBoxClient.Name = "comboBoxClient";
+            this.comboBoxClient.Size = new System.Drawing.Size(242, 33);
+            this.comboBoxClient.Sorted = true;
+            this.comboBoxClient.TabIndex = 4;
             // 
             // buttonTransactions
             // 
@@ -528,20 +523,22 @@
             this.buttonTransactions.UseVisualStyleBackColor = true;
             this.buttonTransactions.Click += new System.EventHandler(this.buttonTransactions_Click);
             // 
-            // buttonSubmit
+            // buttonAdd
             // 
-            this.buttonSubmit.BackgroundImage = global::Broker_Management.Properties.Resources.Rectangle_20;
-            this.buttonSubmit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonSubmit.FlatAppearance.BorderSize = 0;
-            this.buttonSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSubmit.Font = new System.Drawing.Font("Bahnschrift SemiBold", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSubmit.ForeColor = System.Drawing.Color.White;
-            this.buttonSubmit.Location = new System.Drawing.Point(419, 444);
-            this.buttonSubmit.Name = "buttonSubmit";
-            this.buttonSubmit.Size = new System.Drawing.Size(99, 44);
-            this.buttonSubmit.TabIndex = 1;
-            this.buttonSubmit.Text = "ADD";
-            this.buttonSubmit.UseVisualStyleBackColor = true;
+            this.buttonAdd.BackgroundImage = global::Broker_Management.Properties.Resources.Rectangle_20;
+            this.buttonAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonAdd.FlatAppearance.BorderSize = 0;
+            this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAdd.Font = new System.Drawing.Font("Bahnschrift SemiBold", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAdd.ForeColor = System.Drawing.Color.White;
+            this.buttonAdd.Location = new System.Drawing.Point(419, 444);
+            this.buttonAdd.Name = "buttonAdd";
+            this.buttonAdd.Size = new System.Drawing.Size(99, 44);
+            this.buttonAdd.TabIndex = 1;
+            this.buttonAdd.Text = "ADD";
+            this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // textBoxFee
             // 
@@ -808,7 +805,7 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button buttonSubmit;
+        private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.TextBox textBoxFee;
         private System.Windows.Forms.TextBox textBoxAmount;
         private System.Windows.Forms.TextBox textBoxPurpose;
@@ -818,6 +815,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button buttonTransactions;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBoxClient;
     }
 }

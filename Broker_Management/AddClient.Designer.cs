@@ -501,6 +501,7 @@
             // 
             this.buttonSubmit.BackgroundImage = global::Broker_Management.Properties.Resources.Rectangle_20;
             this.buttonSubmit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonSubmit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonSubmit.FlatAppearance.BorderSize = 0;
             this.buttonSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSubmit.Font = new System.Drawing.Font("Bahnschrift SemiBold", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
