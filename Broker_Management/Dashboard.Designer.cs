@@ -31,15 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.panelMenu = new System.Windows.Forms.Panel();
             this.panelButtons = new System.Windows.Forms.Panel();
-            this.iconButton6 = new FontAwesome.Sharp.IconButton();
-            this.financeButton = new FontAwesome.Sharp.IconButton();
-            this.clientListButton = new FontAwesome.Sharp.IconButton();
-            this.recordButton = new FontAwesome.Sharp.IconButton();
-            this.addButton = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelDashboard = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panelTitleBar = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label20 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -68,23 +65,27 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.labelTimer = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panelTitleBar = new System.Windows.Forms.Panel();
+            this.iconButtonDeveloper = new FontAwesome.Sharp.IconButton();
             this.minimizeButton = new FontAwesome.Sharp.IconButton();
             this.closeButton = new FontAwesome.Sharp.IconButton();
+            this.iconButton6 = new FontAwesome.Sharp.IconButton();
+            this.financeButton = new FontAwesome.Sharp.IconButton();
+            this.clientListButton = new FontAwesome.Sharp.IconButton();
+            this.recordButton = new FontAwesome.Sharp.IconButton();
+            this.addButton = new FontAwesome.Sharp.IconButton();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
             this.panelButtons.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelDashboard.SuspendLayout();
+            this.panelTitleBar.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel4.SuspendLayout();
-            this.panelTitleBar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -114,145 +115,6 @@
             this.panelButtons.TabIndex = 1;
             this.panelButtons.Paint += new System.Windows.Forms.PaintEventHandler(this.panelButtons_Paint);
             // 
-            // iconButton6
-            // 
-            this.iconButton6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
-            this.iconButton6.FlatAppearance.BorderSize = 2;
-            this.iconButton6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.iconButton6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
-            this.iconButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton6.Font = new System.Drawing.Font("Bahnschrift Light SemiCondensed", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton6.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
-            this.iconButton6.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
-            this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton6.Location = new System.Drawing.Point(25, 453);
-            this.iconButton6.Name = "iconButton6";
-            this.iconButton6.Size = new System.Drawing.Size(190, 70);
-            this.iconButton6.TabIndex = 1;
-            this.iconButton6.Text = "SIGN OUT";
-            this.iconButton6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton6.UseVisualStyleBackColor = true;
-            this.iconButton6.Click += new System.EventHandler(this.iconButton6_Click);
-            // 
-            // financeButton
-            // 
-            this.financeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(175)))), ((int)(((byte)(207)))));
-            this.financeButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.financeButton.FlatAppearance.BorderSize = 0;
-            this.financeButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.financeButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(124)))), ((int)(((byte)(207)))));
-            this.financeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.financeButton.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.financeButton.ForeColor = System.Drawing.Color.White;
-            this.financeButton.IconChar = FontAwesome.Sharp.IconChar.Poll;
-            this.financeButton.IconColor = System.Drawing.Color.White;
-            this.financeButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.financeButton.IconSize = 45;
-            this.financeButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.financeButton.Location = new System.Drawing.Point(25, 363);
-            this.financeButton.Name = "financeButton";
-            this.financeButton.Size = new System.Drawing.Size(190, 70);
-            this.financeButton.TabIndex = 0;
-            this.financeButton.Text = "       FINANCE";
-            this.financeButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.financeButton.UseVisualStyleBackColor = false;
-            this.financeButton.Click += new System.EventHandler(this.financeButton_Click);
-            // 
-            // clientListButton
-            // 
-            this.clientListButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(182)))), ((int)(((byte)(207)))));
-            this.clientListButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.clientListButton.FlatAppearance.BorderSize = 0;
-            this.clientListButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.clientListButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(124)))), ((int)(((byte)(207)))));
-            this.clientListButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.clientListButton.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clientListButton.ForeColor = System.Drawing.Color.White;
-            this.clientListButton.IconChar = FontAwesome.Sharp.IconChar.UserFriends;
-            this.clientListButton.IconColor = System.Drawing.Color.White;
-            this.clientListButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.clientListButton.IconSize = 45;
-            this.clientListButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.clientListButton.Location = new System.Drawing.Point(25, 278);
-            this.clientListButton.Name = "clientListButton";
-            this.clientListButton.Size = new System.Drawing.Size(190, 70);
-            this.clientListButton.TabIndex = 0;
-            this.clientListButton.Text = "       CLIENT LIST";
-            this.clientListButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.clientListButton.UseVisualStyleBackColor = false;
-            this.clientListButton.Click += new System.EventHandler(this.clientListButton_Click);
-            // 
-            // recordButton
-            // 
-            this.recordButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(207)))));
-            this.recordButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.recordButton.FlatAppearance.BorderSize = 0;
-            this.recordButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.recordButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(124)))), ((int)(((byte)(207)))));
-            this.recordButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.recordButton.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.recordButton.ForeColor = System.Drawing.Color.White;
-            this.recordButton.IconChar = FontAwesome.Sharp.IconChar.Paste;
-            this.recordButton.IconColor = System.Drawing.Color.White;
-            this.recordButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.recordButton.IconSize = 45;
-            this.recordButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.recordButton.Location = new System.Drawing.Point(25, 192);
-            this.recordButton.Name = "recordButton";
-            this.recordButton.Size = new System.Drawing.Size(190, 70);
-            this.recordButton.TabIndex = 0;
-            this.recordButton.Text = "       RECORD";
-            this.recordButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.recordButton.UseVisualStyleBackColor = false;
-            this.recordButton.Click += new System.EventHandler(this.recordButton_Click);
-            // 
-            // addButton
-            // 
-            this.addButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(207)))), ((int)(((byte)(201)))));
-            this.addButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.addButton.FlatAppearance.BorderSize = 0;
-            this.addButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.addButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(124)))), ((int)(((byte)(207)))));
-            this.addButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addButton.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addButton.ForeColor = System.Drawing.Color.White;
-            this.addButton.IconChar = FontAwesome.Sharp.IconChar.Plus;
-            this.addButton.IconColor = System.Drawing.Color.White;
-            this.addButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.addButton.IconSize = 45;
-            this.addButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.addButton.Location = new System.Drawing.Point(25, 105);
-            this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(190, 70);
-            this.addButton.TabIndex = 0;
-            this.addButton.Text = "       ADD";
-            this.addButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.addButton.UseVisualStyleBackColor = false;
-            this.addButton.Click += new System.EventHandler(this.addButton_Click);
-            // 
-            // iconButton1
-            // 
-            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.ForeColor = System.Drawing.Color.White;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.HouseUser;
-            this.iconButton1.IconColor = System.Drawing.Color.White;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 45;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(25, 19);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(190, 70);
-            this.iconButton1.TabIndex = 0;
-            this.iconButton1.Text = "       DASHBOARD";
-            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.UseVisualStyleBackColor = false;
-            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
-            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.pictureBox1);
@@ -262,17 +124,6 @@
             this.panel1.Size = new System.Drawing.Size(232, 100);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Broker_Management.Properties.Resources.brokerage;
-            this.pictureBox1.Location = new System.Drawing.Point(25, 21);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(178, 47);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // panelDashboard
             // 
@@ -285,6 +136,56 @@
             this.panelDashboard.Size = new System.Drawing.Size(904, 593);
             this.panelDashboard.TabIndex = 2;
             this.panelDashboard.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDashboard_Paint);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(25, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(158, 36);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "DASHBOARD";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(671, 35);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(41, 33);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Hi,";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(718, 35);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(95, 33);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "PRITOM";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // panelTitleBar
+            // 
+            this.panelTitleBar.BackColor = System.Drawing.Color.White;
+            this.panelTitleBar.Controls.Add(this.iconButtonDeveloper);
+            this.panelTitleBar.Controls.Add(this.label3);
+            this.panelTitleBar.Controls.Add(this.label2);
+            this.panelTitleBar.Controls.Add(this.label1);
+            this.panelTitleBar.Controls.Add(this.minimizeButton);
+            this.panelTitleBar.Controls.Add(this.closeButton);
+            this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTitleBar.Location = new System.Drawing.Point(232, 0);
+            this.panelTitleBar.Name = "panelTitleBar";
+            this.panelTitleBar.Size = new System.Drawing.Size(904, 68);
+            this.panelTitleBar.TabIndex = 1;
+            this.panelTitleBar.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTitleBar_Paint);
+            this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown_1);
             // 
             // panel3
             // 
@@ -649,54 +550,22 @@
             this.labelTimer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.labelTimer.Click += new System.EventHandler(this.labelTimer_Click);
             // 
-            // label1
+            // iconButtonDeveloper
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(25, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(158, 36);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "DASHBOARD";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(671, 35);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 33);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Hi,";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(718, 35);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 33);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "PRITOM";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // panelTitleBar
-            // 
-            this.panelTitleBar.BackColor = System.Drawing.Color.White;
-            this.panelTitleBar.Controls.Add(this.label3);
-            this.panelTitleBar.Controls.Add(this.label2);
-            this.panelTitleBar.Controls.Add(this.label1);
-            this.panelTitleBar.Controls.Add(this.minimizeButton);
-            this.panelTitleBar.Controls.Add(this.closeButton);
-            this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitleBar.Location = new System.Drawing.Point(232, 0);
-            this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(904, 68);
-            this.panelTitleBar.TabIndex = 1;
-            this.panelTitleBar.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTitleBar_Paint);
-            this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown_1);
+            this.iconButtonDeveloper.BackgroundImage = global::Broker_Management.Properties.Resources.info;
+            this.iconButtonDeveloper.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.iconButtonDeveloper.FlatAppearance.BorderSize = 0;
+            this.iconButtonDeveloper.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButtonDeveloper.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconButtonDeveloper.IconColor = System.Drawing.Color.Black;
+            this.iconButtonDeveloper.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButtonDeveloper.IconSize = 20;
+            this.iconButtonDeveloper.Location = new System.Drawing.Point(189, 27);
+            this.iconButtonDeveloper.Name = "iconButtonDeveloper";
+            this.iconButtonDeveloper.Size = new System.Drawing.Size(35, 35);
+            this.iconButtonDeveloper.TabIndex = 2;
+            this.iconButtonDeveloper.UseVisualStyleBackColor = true;
+            this.iconButtonDeveloper.Click += new System.EventHandler(this.iconButtonDeveloper_Click);
             // 
             // minimizeButton
             // 
@@ -736,6 +605,156 @@
             this.closeButton.UseVisualStyleBackColor = false;
             this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
+            // iconButton6
+            // 
+            this.iconButton6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButton6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
+            this.iconButton6.FlatAppearance.BorderSize = 2;
+            this.iconButton6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.iconButton6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
+            this.iconButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton6.Font = new System.Drawing.Font("Bahnschrift Light SemiCondensed", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton6.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
+            this.iconButton6.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
+            this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton6.Location = new System.Drawing.Point(25, 453);
+            this.iconButton6.Name = "iconButton6";
+            this.iconButton6.Size = new System.Drawing.Size(190, 70);
+            this.iconButton6.TabIndex = 1;
+            this.iconButton6.Text = "SIGN OUT";
+            this.iconButton6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton6.UseVisualStyleBackColor = true;
+            this.iconButton6.Click += new System.EventHandler(this.iconButton6_Click);
+            // 
+            // financeButton
+            // 
+            this.financeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(175)))), ((int)(((byte)(207)))));
+            this.financeButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.financeButton.FlatAppearance.BorderSize = 0;
+            this.financeButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.financeButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(124)))), ((int)(((byte)(207)))));
+            this.financeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.financeButton.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.financeButton.ForeColor = System.Drawing.Color.White;
+            this.financeButton.IconChar = FontAwesome.Sharp.IconChar.Poll;
+            this.financeButton.IconColor = System.Drawing.Color.White;
+            this.financeButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.financeButton.IconSize = 45;
+            this.financeButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.financeButton.Location = new System.Drawing.Point(25, 363);
+            this.financeButton.Name = "financeButton";
+            this.financeButton.Size = new System.Drawing.Size(190, 70);
+            this.financeButton.TabIndex = 0;
+            this.financeButton.Text = "       FINANCE";
+            this.financeButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.financeButton.UseVisualStyleBackColor = false;
+            this.financeButton.Click += new System.EventHandler(this.financeButton_Click);
+            // 
+            // clientListButton
+            // 
+            this.clientListButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(182)))), ((int)(((byte)(207)))));
+            this.clientListButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.clientListButton.FlatAppearance.BorderSize = 0;
+            this.clientListButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.clientListButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(124)))), ((int)(((byte)(207)))));
+            this.clientListButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.clientListButton.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clientListButton.ForeColor = System.Drawing.Color.White;
+            this.clientListButton.IconChar = FontAwesome.Sharp.IconChar.UserFriends;
+            this.clientListButton.IconColor = System.Drawing.Color.White;
+            this.clientListButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.clientListButton.IconSize = 45;
+            this.clientListButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.clientListButton.Location = new System.Drawing.Point(25, 278);
+            this.clientListButton.Name = "clientListButton";
+            this.clientListButton.Size = new System.Drawing.Size(190, 70);
+            this.clientListButton.TabIndex = 0;
+            this.clientListButton.Text = "       CLIENT LIST";
+            this.clientListButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.clientListButton.UseVisualStyleBackColor = false;
+            this.clientListButton.Click += new System.EventHandler(this.clientListButton_Click);
+            // 
+            // recordButton
+            // 
+            this.recordButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(207)))));
+            this.recordButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.recordButton.FlatAppearance.BorderSize = 0;
+            this.recordButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.recordButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(124)))), ((int)(((byte)(207)))));
+            this.recordButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.recordButton.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.recordButton.ForeColor = System.Drawing.Color.White;
+            this.recordButton.IconChar = FontAwesome.Sharp.IconChar.Paste;
+            this.recordButton.IconColor = System.Drawing.Color.White;
+            this.recordButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.recordButton.IconSize = 45;
+            this.recordButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.recordButton.Location = new System.Drawing.Point(25, 192);
+            this.recordButton.Name = "recordButton";
+            this.recordButton.Size = new System.Drawing.Size(190, 70);
+            this.recordButton.TabIndex = 0;
+            this.recordButton.Text = "       RECORD";
+            this.recordButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.recordButton.UseVisualStyleBackColor = false;
+            this.recordButton.Click += new System.EventHandler(this.recordButton_Click);
+            // 
+            // addButton
+            // 
+            this.addButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(207)))), ((int)(((byte)(201)))));
+            this.addButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.addButton.FlatAppearance.BorderSize = 0;
+            this.addButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.addButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(124)))), ((int)(((byte)(207)))));
+            this.addButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addButton.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addButton.ForeColor = System.Drawing.Color.White;
+            this.addButton.IconChar = FontAwesome.Sharp.IconChar.Plus;
+            this.addButton.IconColor = System.Drawing.Color.White;
+            this.addButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.addButton.IconSize = 45;
+            this.addButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.addButton.Location = new System.Drawing.Point(25, 105);
+            this.addButton.Name = "addButton";
+            this.addButton.Size = new System.Drawing.Size(190, 70);
+            this.addButton.TabIndex = 0;
+            this.addButton.Text = "       ADD";
+            this.addButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.addButton.UseVisualStyleBackColor = false;
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.iconButton1.FlatAppearance.BorderSize = 0;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton1.ForeColor = System.Drawing.Color.White;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.HouseUser;
+            this.iconButton1.IconColor = System.Drawing.Color.White;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.IconSize = 45;
+            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton1.Location = new System.Drawing.Point(25, 19);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(190, 70);
+            this.iconButton1.TabIndex = 0;
+            this.iconButton1.Text = "       DASHBOARD";
+            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton1.UseVisualStyleBackColor = false;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Broker_Management.Properties.Resources.brokerage;
+            this.pictureBox1.Location = new System.Drawing.Point(25, 21);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(178, 47);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // Dashboard
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -758,8 +777,9 @@
             this.panelButtons.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelDashboard.ResumeLayout(false);
+            this.panelTitleBar.ResumeLayout(false);
+            this.panelTitleBar.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -769,8 +789,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            this.panelTitleBar.ResumeLayout(false);
-            this.panelTitleBar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -822,6 +841,7 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label4;
+        private FontAwesome.Sharp.IconButton iconButtonDeveloper;
     }
 }
 

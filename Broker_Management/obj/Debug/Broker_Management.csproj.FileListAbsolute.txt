@@ -78,3 +78,4 @@ F:\Development\Visual_Studio\Brokerage\Broker_Management\obj\Debug\Broker_Manage
 F:\Development\Visual_Studio\Brokerage\Broker_Management\obj\Debug\Broker_Management.csproj.CopyComplete
 F:\Development\Visual_Studio\Brokerage\Broker_Management\obj\Debug\Broker_Management.exe
 F:\Development\Visual_Studio\Brokerage\Broker_Management\obj\Debug\Broker_Management.pdb
+F:\Development\Visual_Studio\Brokerage\Broker_Management\obj\Debug\Broker_Management.Developer.resources

@@ -364,5 +364,11 @@ namespace Broker_Management
         {
 
         }
+
+        private void iconButtonDeveloper_Click(object sender, EventArgs e)
+        {
+            Developer obj = new Developer();
+            obj.Show();
+        }
     }
 }
