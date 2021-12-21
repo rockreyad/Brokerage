@@ -385,7 +385,7 @@
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(213, 50);
             this.label25.TabIndex = 1;
-            this.label25.Text = "Sir Matt Busby Way, Old Trafford, Manchester M16 0RA, UK.";
+            this.label25.Text = "Masterpara, Gobindaganj, Gaibandha";
             this.label25.Click += new System.EventHandler(this.label25_Click);
             // 
             // label24
@@ -396,9 +396,9 @@
             this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(116)))), ((int)(((byte)(116)))));
             this.label24.Location = new System.Drawing.Point(120, 289);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(117, 22);
+            this.label24.Size = new System.Drawing.Size(125, 22);
             this.label24.TabIndex = 1;
-            this.label24.Text = "+44 7911 123456";
+            this.label24.Text = "+88017 84 06 1111";
             this.label24.Click += new System.EventHandler(this.label24_Click);
             // 
             // label23
@@ -410,7 +410,7 @@
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(213, 40);
             this.label23.TabIndex = 1;
-            this.label23.Text = "ferguson@manutd.com";
+            this.label23.Text = "pritom07@gmail.com";
             this.label23.Click += new System.EventHandler(this.label23_Click);
             // 
             // label22
@@ -421,9 +421,9 @@
             this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(116)))), ((int)(((byte)(116)))));
             this.label22.Location = new System.Drawing.Point(120, 168);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(76, 22);
+            this.label22.Size = new System.Drawing.Size(78, 22);
             this.label22.TabIndex = 1;
-            this.label22.Text = "31/12/1941";
+            this.label22.Text = "31/12/1996";
             this.label22.Click += new System.EventHandler(this.label22_Click);
             // 
             // label21
@@ -435,7 +435,7 @@
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(213, 50);
             this.label21.TabIndex = 1;
-            this.label21.Text = "Alex Ferguson";
+            this.label21.Text = "Pritom Saha";
             this.label21.Click += new System.EventHandler(this.label21_Click);
             // 
             // label15
@@ -703,9 +703,9 @@
             this.label3.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(718, 35);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(158, 33);
+            this.label3.Size = new System.Drawing.Size(95, 33);
             this.label3.TabIndex = 1;
-            this.label3.Text = "ALEXMANUTD";
+            this.label3.Text = "PRITOM";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // panelTitleBar

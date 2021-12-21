@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -13,7 +14,20 @@ namespace Broker_Management
 {
     public partial class TransactionList : Form
     {
-        Timer timer = new Timer();
+        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Development\Visual_Studio\Brokerage\Database\BrokerDbase.mdf;Integrated Security=True;Connect Timeout=30");
+
+        private void getTracList()
+        {
+
+            Con.Open();
+            string sql = "select * from RecordInfo";
+            SqlDataAdapter adapter = new SqlDataAdapter(sql, Con);
+            SqlCommandBuilder sqlCommandBuilder = new SqlCommandBuilder(adapter);
+            var ds = new DataSet();
+            adapter.Fill(ds);
+            dataGridViewTracList.DataSource = ds.Tables[0];
+            Con.Close();
+        }
         //Fileds
         private int borderSize = 2;
 
@@ -23,60 +37,15 @@ namespace Broker_Management
             InitializeComponent();
             this.Padding = new Padding(borderSize); //BorderSize
             this.BackColor = Color.FromArgb(255, 255, 255); //BorderColor
+
+            getTracList();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //timer interval
-            timer.Interval = 1000; // in milliseconds
-            timer.Tick += new EventHandler(this.timer_Tick);
-
-            //start timer when form loads
-            timer.Start(); //this will use timer_Tick() method
+            
         }
 
-        //timer eventhandler
-        private void timer_Tick(object sender, EventArgs e)
-        {
-            //get current time
-            int hh = DateTime.Now.Hour;
-            int mm = DateTime.Now.Minute;
-            int ss = DateTime.Now.Second;
-
-            //time
-            string time = "";
-
-            //padding leading zero
-            if (hh < 10)
-            {
-                time += "0" + hh;
-            }
-            else
-            {
-                time += hh;
-            }
-            time += ":";
-            if (mm < 10)
-            {
-                time += "0" + mm;
-            }
-            else
-            {
-                time += mm;
-            }
-            time += ":";
-            if (ss < 10)
-            {
-                time += "0" + ss;
-            }
-            else
-            {
-                time += ss;
-            }
-
-            //Update label
-
-        }
 
         //Drag Form
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
