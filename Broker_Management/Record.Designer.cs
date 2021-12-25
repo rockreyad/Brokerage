@@ -54,6 +54,8 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.checkBoxDone = new System.Windows.Forms.CheckBox();
             this.comboBoxClient = new System.Windows.Forms.ComboBox();
             this.buttonTransactions = new System.Windows.Forms.Button();
             this.buttonAdd = new System.Windows.Forms.Button();
@@ -79,6 +81,7 @@
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -474,6 +477,7 @@
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.BackgroundImage = global::Broker_Management.Properties.Resources.Rectangle_91;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Controls.Add(this.groupBox1);
             this.panel2.Controls.Add(this.comboBoxClient);
             this.panel2.Controls.Add(this.buttonTransactions);
             this.panel2.Controls.Add(this.buttonAdd);
@@ -490,6 +494,34 @@
             this.panel2.Size = new System.Drawing.Size(547, 577);
             this.panel2.TabIndex = 0;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.checkBoxDone);
+            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox1.Font = new System.Drawing.Font("Bahnschrift SemiBold", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(327, 45);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(200, 100);
+            this.groupBox1.TabIndex = 5;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Process";
+            // 
+            // checkBoxDone
+            // 
+            this.checkBoxDone.AutoSize = true;
+            this.checkBoxDone.Checked = true;
+            this.checkBoxDone.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBoxDone.FlatAppearance.BorderSize = 0;
+            this.checkBoxDone.Font = new System.Drawing.Font("Bahnschrift", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(190)))), ((int)(((byte)(168)))));
+            this.checkBoxDone.Location = new System.Drawing.Point(18, 49);
+            this.checkBoxDone.Name = "checkBoxDone";
+            this.checkBoxDone.Size = new System.Drawing.Size(89, 21);
+            this.checkBoxDone.TabIndex = 0;
+            this.checkBoxDone.Text = "Complete";
+            this.checkBoxDone.UseVisualStyleBackColor = true;
+            this.checkBoxDone.CheckedChanged += new System.EventHandler(this.checkBoxDone_CheckedChanged);
             // 
             // comboBoxClient
             // 
@@ -761,6 +793,8 @@
             this.panel5.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -816,5 +850,7 @@
         private System.Windows.Forms.Button buttonTransactions;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox comboBoxClient;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.CheckBox checkBoxDone;
     }
 }

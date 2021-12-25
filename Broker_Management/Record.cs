@@ -16,7 +16,7 @@ namespace Broker_Management
     {
         SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Development\Visual_Studio\Brokerage\Database\BrokerDbase.mdf;Integrated Security=True;Connect Timeout=30");
 
-
+        string status;
         //Fileds
         private int borderSize = 2;
 
@@ -34,7 +34,7 @@ namespace Broker_Management
             Con.Open();
             SqlCommand cmd = new SqlCommand("select * from ClientInfo", Con);
             SqlDataReader dr;
-            dr= cmd.ExecuteReader();
+            dr = cmd.ExecuteReader();
             DataTable dt = new DataTable();
             dt.Columns.Add("clientID", typeof(int));
             dt.Load(dr);
@@ -44,21 +44,39 @@ namespace Broker_Management
         }
         private void InsertTransaction()
         {
+            string date = DateTime.Now.ToShortDateString();
             int dealAmmount = Int32.Parse(textBoxAmount.Text);
             float fee = Int32.Parse(textBoxFee.Text);
-            float profitCal = dealAmmount * (fee / 100) ;
+            float profitCal = dealAmmount * (fee / 100);
             string profit = Convert.ToString(profitCal);
+            if (checkBoxDone.Checked)
+            {
+                status = "Complete";
+            }
+            else
+            {
+                status = "Incomplete";
+            }
+           
 
             Con.Open();
-            SqlCommand cmd = new SqlCommand("insert into RecordInfo(clientName,purpose,dealAmmount,fee,profit) values(@clientName,@purpose,@dealAmmount,@fee,@profit)", Con);
+            SqlCommand cmd = new SqlCommand("insert into RecordInfo(date,clientName,purpose,dealAmmount,fee,profit,status) values(@date,@clientName,@purpose,@dealAmmount,@fee,@profit,@status)", Con);
+            cmd.Parameters.AddWithValue("@date", date.ToString());
             cmd.Parameters.AddWithValue("@clientName", comboBoxClient.Text);
             cmd.Parameters.AddWithValue("@purpose", textBoxPurpose.Text);
             cmd.Parameters.AddWithValue("@dealAmmount", textBoxAmount.Text);
             cmd.Parameters.AddWithValue("@fee", textBoxFee.Text);
             cmd.Parameters.AddWithValue("@profit", profit);
+            cmd.Parameters.AddWithValue("@status", status);
             cmd.ExecuteNonQuery();
             Con.Close();
             MessageBox.Show("New Record Added!");
+        }
+
+        private string checkboxValue()
+        {
+            string done = "Complete";
+            return done;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -162,7 +180,6 @@ namespace Broker_Management
         {
             TransactionList obj = new TransactionList();
             obj.Show();
-            this.Hide();
         }
 
         private void panelButtons_Paint(object sender, PaintEventArgs e)
@@ -412,6 +429,19 @@ namespace Broker_Management
         private void buttonAdd_Click(object sender, EventArgs e)
         {
             InsertTransaction();
+        }
+
+        private void checkBoxDone_CheckedChanged(object sender, EventArgs e)
+        {
+            if(checkBoxDone.Checked)
+            {
+                status = checkboxValue();
+            }
+            else
+            {
+                status = "Incomplete";
+            }
+            
         }
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -16,6 +17,41 @@ namespace Broker_Management
 {
     public partial class Dashboard : Form
     {
+        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Development\Visual_Studio\Brokerage\Database\BrokerDbase.mdf;Integrated Security=True;Connect Timeout=30");
+
+        public string GetIncomeText()
+        {
+            string income;
+            Con.Open();
+            SqlCommand cmd = new SqlCommand("SELECT SUM(profit) FROM RecordInfo", Con);
+            Int32 count = (Int32)cmd.ExecuteScalar();
+            income = count.ToString();
+            Con.Close();
+            return income;
+        }
+        public string GetTotalClient()
+        {
+            string income;
+            Con.Open();
+            SqlCommand totalClient = new SqlCommand("SELECT COUNT(clientID) FROM ClientInfo", Con);
+            Int32 count = (Int32)totalClient.ExecuteScalar();
+            Int32 clientcount = (Int32)totalClient.ExecuteScalar();
+            income = count.ToString();
+            Con.Close();
+            return income;
+        }
+
+        public string GetTransaction()
+        {
+            string income;
+            Con.Open();
+            SqlCommand totalClient = new SqlCommand("SELECT COUNT(tracID) FROM RecordInfo", Con);
+            Int32 count = (Int32)totalClient.ExecuteScalar();
+            Int32 clientcount = (Int32)totalClient.ExecuteScalar();
+            income = count.ToString();
+            Con.Close();
+            return income;
+        }
         Timer timer = new Timer();
         //Fileds
         private int borderSize = 2;
@@ -36,6 +72,11 @@ namespace Broker_Management
 
             //start timer when form loads
             timer.Start(); //this will use timer_Tick() method
+
+            //income update from database
+            labelincome.Text = GetIncomeText() + " Tk";
+            labelTotalClient.Text = GetTotalClient();
+            labelTransactions.Text = GetTransaction();
         }
 
         //timer eventhandler

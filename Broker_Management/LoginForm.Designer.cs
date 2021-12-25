@@ -41,6 +41,7 @@
             this.textBoxUsername = new System.Windows.Forms.TextBox();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.buttonAdmin = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -239,12 +240,31 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // buttonAdmin
+            // 
+            this.buttonAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(207)))), ((int)(((byte)(145)))));
+            this.buttonAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonAdmin.FlatAppearance.BorderSize = 0;
+            this.buttonAdmin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.buttonAdmin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(124)))), ((int)(((byte)(207)))));
+            this.buttonAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAdmin.Font = new System.Drawing.Font("Bahnschrift SemiLight", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAdmin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonAdmin.Location = new System.Drawing.Point(200, 535);
+            this.buttonAdmin.Name = "buttonAdmin";
+            this.buttonAdmin.Size = new System.Drawing.Size(117, 38);
+            this.buttonAdmin.TabIndex = 4;
+            this.buttonAdmin.Text = "Admin Area";
+            this.buttonAdmin.UseVisualStyleBackColor = false;
+            this.buttonAdmin.Click += new System.EventHandler(this.buttonAdmin_Click);
+            // 
             // LoginForm
             // 
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(118)))), ((int)(((byte)(157)))));
             this.ClientSize = new System.Drawing.Size(360, 622);
             this.Controls.Add(this.iconButtonClose);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.buttonAdmin);
             this.Controls.Add(this.buttonSignIn);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -281,5 +301,6 @@
         private System.Windows.Forms.Label label3;
         private FontAwesome.Sharp.IconButton iconButtonClose;
         private FontAwesome.Sharp.IconButton iconButtonShowPass;
+        private System.Windows.Forms.Button buttonAdmin;
     }
 }

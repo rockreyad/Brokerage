@@ -120,5 +120,11 @@ namespace Broker_Management
 
 
         }
+
+        private void buttonAdmin_Click(object sender, EventArgs e)
+        {
+            AdminLogin obj = new AdminLogin();
+            obj.ShowDialog();
+            this.Hide();        }
     }
 }

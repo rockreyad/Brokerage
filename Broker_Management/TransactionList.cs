@@ -105,14 +105,12 @@ namespace Broker_Management
 
         private void closeButton_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Hide();
         }
 
         //BtnClickingNew Windows Form Open
         private void iconButtonDasboard_Click(object sender, EventArgs e)
         {
-            Dashboard obj = new Dashboard();
-            obj.Show();
             this.Hide();
         }
         private void addButton_Click(object sender, EventArgs e)

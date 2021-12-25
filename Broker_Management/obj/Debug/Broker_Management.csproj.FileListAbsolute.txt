@@ -79,3 +79,6 @@ F:\Development\Visual_Studio\Brokerage\Broker_Management\obj\Debug\Broker_Manage
 F:\Development\Visual_Studio\Brokerage\Broker_Management\obj\Debug\Broker_Management.exe
 F:\Development\Visual_Studio\Brokerage\Broker_Management\obj\Debug\Broker_Management.pdb
 F:\Development\Visual_Studio\Brokerage\Broker_Management\obj\Debug\Broker_Management.Developer.resources
+F:\Development\Visual_Studio\Brokerage\Broker_Management\obj\Debug\Broker_Management.AdminLogin.resources
+F:\Development\Visual_Studio\Brokerage\Broker_Management\obj\Debug\Broker_Management.AdminMenu.resources
+F:\Development\Visual_Studio\Brokerage\Broker_Management\obj\Debug\Broker_Management.NewBroker.resources
