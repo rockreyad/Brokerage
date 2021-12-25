@@ -49,6 +49,16 @@ namespace Broker_Management
 
         }
 
+        private void iconButtonUpdate_Click(object sender, EventArgs e)
+        {
+            FixLater fixLater = new FixLater();
+            fixLater.ShowDialog();
+        }
 
+        private void iconButtonDelete_Click(object sender, EventArgs e)
+        {
+            FixLater fixLater = new FixLater();
+            fixLater.ShowDialog();
+        }
     }
 }

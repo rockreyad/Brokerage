@@ -86,6 +86,18 @@
     <Compile Include="Developer.Designer.cs">
       <DependentUpon>Developer.cs</DependentUpon>
     </Compile>
+    <Compile Include="EditClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditClient.Designer.cs">
+      <DependentUpon>EditClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditTrac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditTrac.Designer.cs">
+      <DependentUpon>EditTrac.cs</DependentUpon>
+    </Compile>
     <Compile Include="Finance.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +109,12 @@
     </Compile>
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FixLater.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FixLater.Designer.cs">
+      <DependentUpon>FixLater.cs</DependentUpon>
     </Compile>
     <Compile Include="LoadDatabase.cs" />
     <Compile Include="LoginForm.cs">
@@ -143,8 +161,17 @@
     <EmbeddedResource Include="Developer.resx">
       <DependentUpon>Developer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EditClient.resx">
+      <DependentUpon>EditClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditTrac.resx">
+      <DependentUpon>EditTrac.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Finance.resx">
       <DependentUpon>Finance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FixLater.resx">
+      <DependentUpon>FixLater.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>

@@ -411,5 +411,17 @@ namespace Broker_Management
             Developer obj = new Developer();
             obj.Show();
         }
+
+        private void iconButtonEditTrac_Click(object sender, EventArgs e)
+        {
+            EditTrac editTrac = new EditTrac();
+            editTrac.ShowDialog();
+        }
+
+        private void iconButtonEditClient_Click(object sender, EventArgs e)
+        {
+            EditClient editClient = new EditClient();
+            editClient.ShowDialog();
+        }
     }
 }

@@ -47,11 +47,13 @@ namespace Broker_Management
             string date = DateTime.Now.ToShortDateString();
             int dealAmmount = Int32.Parse(textBoxAmount.Text);
             float fee = Int32.Parse(textBoxFee.Text);
-            float profitCal = dealAmmount * (fee / 100);
+            float profitCal = 0;
             string profit = Convert.ToString(profitCal);
-            if (checkBoxDone.Checked)
+            if (checkBoxDone.Checked==true)
             {
                 status = "Complete";
+                 profitCal = dealAmmount * (fee / 100);
+                 profit = Convert.ToString(profitCal);
             }
             else
             {

@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.panelTop = new System.Windows.Forms.Panel();
+            this.iconButtonDelete = new FontAwesome.Sharp.IconButton();
+            this.iconButtonUpdate = new FontAwesome.Sharp.IconButton();
+            this.iconButtonNewBroker = new FontAwesome.Sharp.IconButton();
             this.iconButtonClose = new FontAwesome.Sharp.IconButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButtonNewBroker = new FontAwesome.Sharp.IconButton();
             this.panelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -48,6 +48,72 @@
             this.panelTop.Size = new System.Drawing.Size(801, 61);
             this.panelTop.TabIndex = 0;
             this.panelTop.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTop_MouseDown);
+            // 
+            // iconButtonDelete
+            // 
+            this.iconButtonDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(207)))), ((int)(((byte)(201)))));
+            this.iconButtonDelete.FlatAppearance.BorderSize = 0;
+            this.iconButtonDelete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(11)))), ((int)(((byte)(78)))));
+            this.iconButtonDelete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(13)))), ((int)(((byte)(51)))));
+            this.iconButtonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButtonDelete.Font = new System.Drawing.Font("Bahnschrift SemiBold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButtonDelete.ForeColor = System.Drawing.Color.White;
+            this.iconButtonDelete.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.iconButtonDelete.IconColor = System.Drawing.Color.White;
+            this.iconButtonDelete.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButtonDelete.Location = new System.Drawing.Point(543, 172);
+            this.iconButtonDelete.Name = "iconButtonDelete";
+            this.iconButtonDelete.Size = new System.Drawing.Size(203, 128);
+            this.iconButtonDelete.TabIndex = 1;
+            this.iconButtonDelete.Text = "Delete";
+            this.iconButtonDelete.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.iconButtonDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.iconButtonDelete.UseVisualStyleBackColor = false;
+            this.iconButtonDelete.Click += new System.EventHandler(this.iconButtonDelete_Click);
+            // 
+            // iconButtonUpdate
+            // 
+            this.iconButtonUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(207)))), ((int)(((byte)(201)))));
+            this.iconButtonUpdate.FlatAppearance.BorderSize = 0;
+            this.iconButtonUpdate.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(11)))), ((int)(((byte)(78)))));
+            this.iconButtonUpdate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(13)))), ((int)(((byte)(51)))));
+            this.iconButtonUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButtonUpdate.Font = new System.Drawing.Font("Bahnschrift SemiBold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButtonUpdate.ForeColor = System.Drawing.Color.White;
+            this.iconButtonUpdate.IconChar = FontAwesome.Sharp.IconChar.ChalkboardTeacher;
+            this.iconButtonUpdate.IconColor = System.Drawing.Color.White;
+            this.iconButtonUpdate.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButtonUpdate.Location = new System.Drawing.Point(294, 172);
+            this.iconButtonUpdate.Name = "iconButtonUpdate";
+            this.iconButtonUpdate.Size = new System.Drawing.Size(203, 128);
+            this.iconButtonUpdate.TabIndex = 1;
+            this.iconButtonUpdate.Text = "Update";
+            this.iconButtonUpdate.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.iconButtonUpdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.iconButtonUpdate.UseVisualStyleBackColor = false;
+            this.iconButtonUpdate.Click += new System.EventHandler(this.iconButtonUpdate_Click);
+            // 
+            // iconButtonNewBroker
+            // 
+            this.iconButtonNewBroker.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(207)))), ((int)(((byte)(201)))));
+            this.iconButtonNewBroker.FlatAppearance.BorderSize = 0;
+            this.iconButtonNewBroker.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(11)))), ((int)(((byte)(78)))));
+            this.iconButtonNewBroker.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(13)))), ((int)(((byte)(51)))));
+            this.iconButtonNewBroker.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButtonNewBroker.Font = new System.Drawing.Font("Bahnschrift SemiBold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButtonNewBroker.ForeColor = System.Drawing.Color.White;
+            this.iconButtonNewBroker.IconChar = FontAwesome.Sharp.IconChar.BookMedical;
+            this.iconButtonNewBroker.IconColor = System.Drawing.Color.White;
+            this.iconButtonNewBroker.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButtonNewBroker.Location = new System.Drawing.Point(46, 172);
+            this.iconButtonNewBroker.Name = "iconButtonNewBroker";
+            this.iconButtonNewBroker.Size = new System.Drawing.Size(203, 128);
+            this.iconButtonNewBroker.TabIndex = 1;
+            this.iconButtonNewBroker.Text = "New Broker";
+            this.iconButtonNewBroker.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.iconButtonNewBroker.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.iconButtonNewBroker.UseVisualStyleBackColor = false;
+            this.iconButtonNewBroker.Click += new System.EventHandler(this.iconButtonNewBroker_Click);
             // 
             // iconButtonClose
             // 
@@ -76,77 +142,13 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // iconButton3
-            // 
-            this.iconButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(207)))), ((int)(((byte)(201)))));
-            this.iconButton3.FlatAppearance.BorderSize = 0;
-            this.iconButton3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(11)))), ((int)(((byte)(78)))));
-            this.iconButton3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(13)))), ((int)(((byte)(51)))));
-            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.Font = new System.Drawing.Font("Bahnschrift SemiBold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton3.ForeColor = System.Drawing.Color.White;
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Times;
-            this.iconButton3.IconColor = System.Drawing.Color.White;
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.Location = new System.Drawing.Point(543, 172);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(203, 128);
-            this.iconButton3.TabIndex = 1;
-            this.iconButton3.Text = "Delete";
-            this.iconButton3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.iconButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.iconButton3.UseVisualStyleBackColor = false;
-            // 
-            // iconButton2
-            // 
-            this.iconButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(207)))), ((int)(((byte)(201)))));
-            this.iconButton2.FlatAppearance.BorderSize = 0;
-            this.iconButton2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(11)))), ((int)(((byte)(78)))));
-            this.iconButton2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(13)))), ((int)(((byte)(51)))));
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.Font = new System.Drawing.Font("Bahnschrift SemiBold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton2.ForeColor = System.Drawing.Color.White;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.ChalkboardTeacher;
-            this.iconButton2.IconColor = System.Drawing.Color.White;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.Location = new System.Drawing.Point(294, 172);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(203, 128);
-            this.iconButton2.TabIndex = 1;
-            this.iconButton2.Text = "Update";
-            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.iconButton2.UseVisualStyleBackColor = false;
-            // 
-            // iconButtonNewBroker
-            // 
-            this.iconButtonNewBroker.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(207)))), ((int)(((byte)(201)))));
-            this.iconButtonNewBroker.FlatAppearance.BorderSize = 0;
-            this.iconButtonNewBroker.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(11)))), ((int)(((byte)(78)))));
-            this.iconButtonNewBroker.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(13)))), ((int)(((byte)(51)))));
-            this.iconButtonNewBroker.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButtonNewBroker.Font = new System.Drawing.Font("Bahnschrift SemiBold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButtonNewBroker.ForeColor = System.Drawing.Color.White;
-            this.iconButtonNewBroker.IconChar = FontAwesome.Sharp.IconChar.BookMedical;
-            this.iconButtonNewBroker.IconColor = System.Drawing.Color.White;
-            this.iconButtonNewBroker.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButtonNewBroker.Location = new System.Drawing.Point(46, 172);
-            this.iconButtonNewBroker.Name = "iconButtonNewBroker";
-            this.iconButtonNewBroker.Size = new System.Drawing.Size(203, 128);
-            this.iconButtonNewBroker.TabIndex = 1;
-            this.iconButtonNewBroker.Text = "New Broker";
-            this.iconButtonNewBroker.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.iconButtonNewBroker.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.iconButtonNewBroker.UseVisualStyleBackColor = false;
-            this.iconButtonNewBroker.Click += new System.EventHandler(this.iconButtonNewBroker_Click);
-            // 
             // AdminMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.iconButton3);
-            this.Controls.Add(this.iconButton2);
+            this.Controls.Add(this.iconButtonDelete);
+            this.Controls.Add(this.iconButtonUpdate);
             this.Controls.Add(this.iconButtonNewBroker);
             this.Controls.Add(this.panelTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -166,7 +168,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private FontAwesome.Sharp.IconButton iconButtonClose;
         private FontAwesome.Sharp.IconButton iconButtonNewBroker;
-        private FontAwesome.Sharp.IconButton iconButton2;
-        private FontAwesome.Sharp.IconButton iconButton3;
+        private FontAwesome.Sharp.IconButton iconButtonUpdate;
+        private FontAwesome.Sharp.IconButton iconButtonDelete;
     }
 }

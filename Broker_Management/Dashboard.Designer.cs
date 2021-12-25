@@ -41,6 +41,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelDashboard = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.iconButtonEditClient = new FontAwesome.Sharp.IconButton();
+            this.iconButtonEditTrac = new FontAwesome.Sharp.IconButton();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -64,8 +66,6 @@
             this.iconButtonDeveloper = new FontAwesome.Sharp.IconButton();
             this.minimizeButton = new FontAwesome.Sharp.IconButton();
             this.closeButton = new FontAwesome.Sharp.IconButton();
-            this.iconButtonEditTrac = new FontAwesome.Sharp.IconButton();
-            this.iconButtonEditClient = new FontAwesome.Sharp.IconButton();
             this.panelMenu.SuspendLayout();
             this.panelButtons.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -290,6 +290,56 @@
             this.panel3.Size = new System.Drawing.Size(339, 212);
             this.panel3.TabIndex = 0;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // iconButtonEditClient
+            // 
+            this.iconButtonEditClient.BackColor = System.Drawing.Color.Transparent;
+            this.iconButtonEditClient.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.iconButtonEditClient.FlatAppearance.BorderSize = 0;
+            this.iconButtonEditClient.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(83)))), ((int)(((byte)(113)))));
+            this.iconButtonEditClient.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(184)))), ((int)(((byte)(141)))));
+            this.iconButtonEditClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButtonEditClient.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButtonEditClient.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(25)))), ((int)(((byte)(130)))));
+            this.iconButtonEditClient.IconChar = FontAwesome.Sharp.IconChar.AngleDoubleRight;
+            this.iconButtonEditClient.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(25)))), ((int)(((byte)(130)))));
+            this.iconButtonEditClient.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButtonEditClient.IconSize = 40;
+            this.iconButtonEditClient.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButtonEditClient.Location = new System.Drawing.Point(15, 131);
+            this.iconButtonEditClient.Name = "iconButtonEditClient";
+            this.iconButtonEditClient.Size = new System.Drawing.Size(198, 36);
+            this.iconButtonEditClient.TabIndex = 1;
+            this.iconButtonEditClient.Text = "Edit Client";
+            this.iconButtonEditClient.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButtonEditClient.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButtonEditClient.UseVisualStyleBackColor = false;
+            this.iconButtonEditClient.Click += new System.EventHandler(this.iconButtonEditClient_Click);
+            // 
+            // iconButtonEditTrac
+            // 
+            this.iconButtonEditTrac.BackColor = System.Drawing.Color.Transparent;
+            this.iconButtonEditTrac.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.iconButtonEditTrac.FlatAppearance.BorderSize = 0;
+            this.iconButtonEditTrac.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(83)))), ((int)(((byte)(113)))));
+            this.iconButtonEditTrac.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(184)))), ((int)(((byte)(141)))));
+            this.iconButtonEditTrac.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButtonEditTrac.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButtonEditTrac.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(25)))), ((int)(((byte)(130)))));
+            this.iconButtonEditTrac.IconChar = FontAwesome.Sharp.IconChar.AngleDoubleRight;
+            this.iconButtonEditTrac.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(25)))), ((int)(((byte)(130)))));
+            this.iconButtonEditTrac.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButtonEditTrac.IconSize = 40;
+            this.iconButtonEditTrac.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButtonEditTrac.Location = new System.Drawing.Point(15, 79);
+            this.iconButtonEditTrac.Name = "iconButtonEditTrac";
+            this.iconButtonEditTrac.Size = new System.Drawing.Size(198, 36);
+            this.iconButtonEditTrac.TabIndex = 1;
+            this.iconButtonEditTrac.Text = "Edit Transaction";
+            this.iconButtonEditTrac.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButtonEditTrac.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButtonEditTrac.UseVisualStyleBackColor = false;
+            this.iconButtonEditTrac.Click += new System.EventHandler(this.iconButtonEditTrac_Click);
             // 
             // panel5
             // 
@@ -596,54 +646,6 @@
             this.closeButton.TabIndex = 0;
             this.closeButton.UseVisualStyleBackColor = false;
             this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
-            // 
-            // iconButtonEditTrac
-            // 
-            this.iconButtonEditTrac.BackColor = System.Drawing.Color.Transparent;
-            this.iconButtonEditTrac.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.iconButtonEditTrac.FlatAppearance.BorderSize = 0;
-            this.iconButtonEditTrac.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(83)))), ((int)(((byte)(113)))));
-            this.iconButtonEditTrac.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(184)))), ((int)(((byte)(141)))));
-            this.iconButtonEditTrac.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButtonEditTrac.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButtonEditTrac.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(25)))), ((int)(((byte)(130)))));
-            this.iconButtonEditTrac.IconChar = FontAwesome.Sharp.IconChar.AngleDoubleRight;
-            this.iconButtonEditTrac.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(25)))), ((int)(((byte)(130)))));
-            this.iconButtonEditTrac.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButtonEditTrac.IconSize = 40;
-            this.iconButtonEditTrac.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonEditTrac.Location = new System.Drawing.Point(15, 79);
-            this.iconButtonEditTrac.Name = "iconButtonEditTrac";
-            this.iconButtonEditTrac.Size = new System.Drawing.Size(198, 36);
-            this.iconButtonEditTrac.TabIndex = 1;
-            this.iconButtonEditTrac.Text = "Edit Transaction";
-            this.iconButtonEditTrac.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButtonEditTrac.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButtonEditTrac.UseVisualStyleBackColor = false;
-            // 
-            // iconButtonEditClient
-            // 
-            this.iconButtonEditClient.BackColor = System.Drawing.Color.Transparent;
-            this.iconButtonEditClient.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.iconButtonEditClient.FlatAppearance.BorderSize = 0;
-            this.iconButtonEditClient.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(83)))), ((int)(((byte)(113)))));
-            this.iconButtonEditClient.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(184)))), ((int)(((byte)(141)))));
-            this.iconButtonEditClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButtonEditClient.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButtonEditClient.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(25)))), ((int)(((byte)(130)))));
-            this.iconButtonEditClient.IconChar = FontAwesome.Sharp.IconChar.AngleDoubleRight;
-            this.iconButtonEditClient.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(25)))), ((int)(((byte)(130)))));
-            this.iconButtonEditClient.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButtonEditClient.IconSize = 40;
-            this.iconButtonEditClient.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonEditClient.Location = new System.Drawing.Point(15, 131);
-            this.iconButtonEditClient.Name = "iconButtonEditClient";
-            this.iconButtonEditClient.Size = new System.Drawing.Size(198, 36);
-            this.iconButtonEditClient.TabIndex = 1;
-            this.iconButtonEditClient.Text = "Edit Client";
-            this.iconButtonEditClient.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButtonEditClient.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButtonEditClient.UseVisualStyleBackColor = false;
             // 
             // Dashboard
             // 

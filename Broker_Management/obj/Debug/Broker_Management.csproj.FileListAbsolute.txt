@@ -82,3 +82,6 @@ F:\Development\Visual_Studio\Brokerage\Broker_Management\obj\Debug\Broker_Manage
 F:\Development\Visual_Studio\Brokerage\Broker_Management\obj\Debug\Broker_Management.AdminLogin.resources
 F:\Development\Visual_Studio\Brokerage\Broker_Management\obj\Debug\Broker_Management.AdminMenu.resources
 F:\Development\Visual_Studio\Brokerage\Broker_Management\obj\Debug\Broker_Management.NewBroker.resources
+F:\Development\Visual_Studio\Brokerage\Broker_Management\obj\Debug\Broker_Management.FixLater.resources
+F:\Development\Visual_Studio\Brokerage\Broker_Management\obj\Debug\Broker_Management.EditTrac.resources
+F:\Development\Visual_Studio\Brokerage\Broker_Management\obj\Debug\Broker_Management.EditClient.resources
