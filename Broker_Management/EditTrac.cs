@@ -179,5 +179,10 @@ namespace Broker_Management
             }
             
         }
+
+        private void iconButtonBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
