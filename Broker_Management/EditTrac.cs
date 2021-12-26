@@ -165,19 +165,7 @@ namespace Broker_Management
 
         private void dataGridViewSearch_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            string done = dataGridViewSearch.SelectedRows[0].Cells[7].Value.ToString();
-            if(done == "Complete")
-            {
-                
-                checkBoxDone.Checked = true;
-                checkBoxDone.CheckState = CheckState.Checked;
-            }
-            else
-            {
-                checkBoxDone.Checked = false;
-                checkBoxDone.CheckState = CheckState.Unchecked;
-            }
-            
+
         }
 
         private void iconButtonBack_Click(object sender, EventArgs e)

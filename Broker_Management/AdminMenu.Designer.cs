@@ -28,12 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminMenu));
             this.panelTop = new System.Windows.Forms.Panel();
+            this.iconButtonClose = new FontAwesome.Sharp.IconButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.iconButtonDelete = new FontAwesome.Sharp.IconButton();
             this.iconButtonUpdate = new FontAwesome.Sharp.IconButton();
             this.iconButtonNewBroker = new FontAwesome.Sharp.IconButton();
-            this.iconButtonClose = new FontAwesome.Sharp.IconButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -48,6 +49,33 @@
             this.panelTop.Size = new System.Drawing.Size(801, 61);
             this.panelTop.TabIndex = 0;
             this.panelTop.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTop_MouseDown);
+            // 
+            // iconButtonClose
+            // 
+            this.iconButtonClose.BackgroundImage = global::Broker_Management.Properties.Resources.cross;
+            this.iconButtonClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.iconButtonClose.FlatAppearance.BorderSize = 0;
+            this.iconButtonClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButtonClose.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconButtonClose.IconColor = System.Drawing.Color.Black;
+            this.iconButtonClose.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButtonClose.Location = new System.Drawing.Point(759, 12);
+            this.iconButtonClose.Name = "iconButtonClose";
+            this.iconButtonClose.Size = new System.Drawing.Size(30, 30);
+            this.iconButtonClose.TabIndex = 6;
+            this.iconButtonClose.TabStop = false;
+            this.iconButtonClose.UseVisualStyleBackColor = true;
+            this.iconButtonClose.Click += new System.EventHandler(this.iconButtonClose_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Broker_Management.Properties.Resources.brokerage_white;
+            this.pictureBox1.Location = new System.Drawing.Point(31, 7);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(178, 47);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // iconButtonDelete
             // 
@@ -115,33 +143,6 @@
             this.iconButtonNewBroker.UseVisualStyleBackColor = false;
             this.iconButtonNewBroker.Click += new System.EventHandler(this.iconButtonNewBroker_Click);
             // 
-            // iconButtonClose
-            // 
-            this.iconButtonClose.BackgroundImage = global::Broker_Management.Properties.Resources.cross;
-            this.iconButtonClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.iconButtonClose.FlatAppearance.BorderSize = 0;
-            this.iconButtonClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButtonClose.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButtonClose.IconColor = System.Drawing.Color.Black;
-            this.iconButtonClose.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButtonClose.Location = new System.Drawing.Point(759, 12);
-            this.iconButtonClose.Name = "iconButtonClose";
-            this.iconButtonClose.Size = new System.Drawing.Size(30, 30);
-            this.iconButtonClose.TabIndex = 6;
-            this.iconButtonClose.TabStop = false;
-            this.iconButtonClose.UseVisualStyleBackColor = true;
-            this.iconButtonClose.Click += new System.EventHandler(this.iconButtonClose_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Broker_Management.Properties.Resources.brokerage_white;
-            this.pictureBox1.Location = new System.Drawing.Point(31, 7);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(178, 47);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // AdminMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -152,6 +153,7 @@
             this.Controls.Add(this.iconButtonNewBroker);
             this.Controls.Add(this.panelTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AdminMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminMenu";

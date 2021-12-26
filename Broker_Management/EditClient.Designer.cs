@@ -29,7 +29,9 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditClient));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.iconButtonClose = new FontAwesome.Sharp.IconButton();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonSearch = new System.Windows.Forms.Button();
             this.textBoxClientID = new System.Windows.Forms.TextBox();
@@ -46,7 +48,6 @@
             this.textBoxAddress = new System.Windows.Forms.TextBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.buttonUpdate = new System.Windows.Forms.Button();
-            this.iconButtonClose = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSearch)).BeginInit();
@@ -68,6 +69,23 @@
             this.panel1.Size = new System.Drawing.Size(609, 33);
             this.panel1.TabIndex = 1;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            // 
+            // iconButtonClose
+            // 
+            this.iconButtonClose.BackgroundImage = global::Broker_Management.Properties.Resources.cross;
+            this.iconButtonClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.iconButtonClose.FlatAppearance.BorderSize = 0;
+            this.iconButtonClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButtonClose.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconButtonClose.IconColor = System.Drawing.Color.Black;
+            this.iconButtonClose.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButtonClose.Location = new System.Drawing.Point(576, 1);
+            this.iconButtonClose.Name = "iconButtonClose";
+            this.iconButtonClose.Size = new System.Drawing.Size(30, 30);
+            this.iconButtonClose.TabIndex = 6;
+            this.iconButtonClose.TabStop = false;
+            this.iconButtonClose.UseVisualStyleBackColor = true;
+            this.iconButtonClose.Click += new System.EventHandler(this.iconButtonClose_Click);
             // 
             // label1
             // 
@@ -299,23 +317,6 @@
             this.buttonUpdate.UseVisualStyleBackColor = true;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
-            // iconButtonClose
-            // 
-            this.iconButtonClose.BackgroundImage = global::Broker_Management.Properties.Resources.cross;
-            this.iconButtonClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.iconButtonClose.FlatAppearance.BorderSize = 0;
-            this.iconButtonClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButtonClose.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButtonClose.IconColor = System.Drawing.Color.Black;
-            this.iconButtonClose.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButtonClose.Location = new System.Drawing.Point(576, 1);
-            this.iconButtonClose.Name = "iconButtonClose";
-            this.iconButtonClose.Size = new System.Drawing.Size(30, 30);
-            this.iconButtonClose.TabIndex = 6;
-            this.iconButtonClose.TabStop = false;
-            this.iconButtonClose.UseVisualStyleBackColor = true;
-            this.iconButtonClose.Click += new System.EventHandler(this.iconButtonClose_Click);
-            // 
             // EditClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -338,6 +339,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EditClient";
             this.Text = "EditClient";
             this.panel1.ResumeLayout(false);
