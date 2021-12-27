@@ -142,7 +142,7 @@
             // 
             // financeButton
             // 
-            this.financeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(175)))), ((int)(((byte)(207)))));
+            this.financeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(205)))), ((int)(((byte)(221)))));
             this.financeButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.financeButton.FlatAppearance.BorderSize = 0;
             this.financeButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -166,7 +166,7 @@
             // 
             // clientListButton
             // 
-            this.clientListButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(182)))), ((int)(((byte)(207)))));
+            this.clientListButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(205)))), ((int)(((byte)(221)))));
             this.clientListButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.clientListButton.FlatAppearance.BorderSize = 0;
             this.clientListButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -190,7 +190,7 @@
             // 
             // recordButton
             // 
-            this.recordButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(188)))), ((int)(((byte)(207)))));
+            this.recordButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(205)))), ((int)(((byte)(221)))));
             this.recordButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.recordButton.FlatAppearance.BorderSize = 0;
             this.recordButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));

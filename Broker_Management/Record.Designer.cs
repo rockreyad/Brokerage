@@ -141,7 +141,7 @@
             // 
             // financeButton
             // 
-            this.financeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(175)))), ((int)(((byte)(207)))));
+            this.financeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(205)))), ((int)(((byte)(221)))));
             this.financeButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.financeButton.FlatAppearance.BorderSize = 0;
             this.financeButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -165,7 +165,7 @@
             // 
             // clientListButton
             // 
-            this.clientListButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(182)))), ((int)(((byte)(207)))));
+            this.clientListButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(205)))), ((int)(((byte)(221)))));
             this.clientListButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.clientListButton.FlatAppearance.BorderSize = 0;
             this.clientListButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -210,7 +210,7 @@
             // 
             // addButton
             // 
-            this.addButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(207)))), ((int)(((byte)(201)))));
+            this.addButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(205)))), ((int)(((byte)(221)))));
             this.addButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.addButton.FlatAppearance.BorderSize = 0;
             this.addButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -475,7 +475,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             this.panel2.BackgroundImage = global::Broker_Management.Properties.Resources.Rectangle_91;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Controls.Add(this.groupBox1);
@@ -498,9 +498,11 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.checkBoxDone);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Font = new System.Drawing.Font("Bahnschrift SemiBold", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(327, 45);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(200, 100);
@@ -510,18 +512,22 @@
             // 
             // checkBoxDone
             // 
-            this.checkBoxDone.AutoSize = true;
             this.checkBoxDone.Checked = true;
             this.checkBoxDone.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxDone.FlatAppearance.BorderSize = 0;
-            this.checkBoxDone.Font = new System.Drawing.Font("Bahnschrift", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxDone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(190)))), ((int)(((byte)(168)))));
-            this.checkBoxDone.Location = new System.Drawing.Point(18, 49);
+            this.checkBoxDone.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.checkBoxDone.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(171)))), ((int)(((byte)(124)))));
+            this.checkBoxDone.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(71)))), ((int)(((byte)(171)))));
+            this.checkBoxDone.Font = new System.Drawing.Font("Bahnschrift", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDone.ForeColor = System.Drawing.Color.White;
+            this.checkBoxDone.Location = new System.Drawing.Point(6, 40);
+            this.checkBoxDone.Margin = new System.Windows.Forms.Padding(1);
             this.checkBoxDone.Name = "checkBoxDone";
-            this.checkBoxDone.Size = new System.Drawing.Size(89, 21);
+            this.checkBoxDone.Padding = new System.Windows.Forms.Padding(4);
+            this.checkBoxDone.Size = new System.Drawing.Size(163, 38);
             this.checkBoxDone.TabIndex = 0;
             this.checkBoxDone.Text = "Complete";
-            this.checkBoxDone.UseVisualStyleBackColor = true;
+            this.checkBoxDone.UseVisualStyleBackColor = false;
             this.checkBoxDone.CheckedChanged += new System.EventHandler(this.checkBoxDone_CheckedChanged);
             // 
             // comboBoxClient
@@ -530,7 +536,6 @@
             this.comboBoxClient.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxClient.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 16F);
-            this.comboBoxClient.FormattingEnabled = true;
             this.comboBoxClient.Location = new System.Drawing.Point(44, 53);
             this.comboBoxClient.Name = "comboBoxClient";
             this.comboBoxClient.Size = new System.Drawing.Size(242, 33);
@@ -539,6 +544,7 @@
             // 
             // buttonTransactions
             // 
+            this.buttonTransactions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(49)))), ((int)(((byte)(221)))));
             this.buttonTransactions.BackgroundImage = global::Broker_Management.Properties.Resources.Rectangle_21;
             this.buttonTransactions.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonTransactions.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -553,7 +559,7 @@
             this.buttonTransactions.Size = new System.Drawing.Size(273, 44);
             this.buttonTransactions.TabIndex = 3;
             this.buttonTransactions.Text = "Show Record List";
-            this.buttonTransactions.UseVisualStyleBackColor = true;
+            this.buttonTransactions.UseVisualStyleBackColor = false;
             this.buttonTransactions.Click += new System.EventHandler(this.buttonTransactions_Click);
             // 
             // buttonAdd
@@ -796,7 +802,6 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

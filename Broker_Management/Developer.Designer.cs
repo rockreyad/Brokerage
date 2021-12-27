@@ -44,7 +44,7 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Candara", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label1.ForeColor = System.Drawing.Color.Silver;
             this.label1.Location = new System.Drawing.Point(24, 163);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(313, 78);
@@ -54,7 +54,7 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.ForeColor = System.Drawing.Color.DimGray;
             this.label2.Location = new System.Drawing.Point(24, 265);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(313, 28);
@@ -140,7 +140,7 @@
             // 
             // Developer
             // 
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(118)))), ((int)(((byte)(157)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
             this.ClientSize = new System.Drawing.Size(360, 622);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label6);

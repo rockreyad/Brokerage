@@ -43,9 +43,29 @@ namespace Broker_Management
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            AlertStatus();
+        }
+        private void AlertStatus()
+        {
+            int numberOfRows = dataGridViewTracList.Rows.Count;
+            string getFee;
+            for (int i = 0; i < numberOfRows; i++)
+            {
+                getFee = dataGridViewTracList.Rows[i].Cells[5].Value.ToString();
+                int fee = Convert.ToInt32(getFee);
+                //string gg = fee.ToString() + "%";
+                //dataGridViewTracList.Rows[i].Cells[5].Value = gg.ToString();
+
+                string getStatus = dataGridViewTracList.Rows[i].Cells[7].Value.ToString();
+                if(getStatus == "Incomplete")
+                {
+                    dataGridViewTracList.Rows[i].Cells[7].Value = getStatus.ToUpper();
+
+                    dataGridViewTracList.Rows[i].DefaultCellStyle.BackColor = Color.FromArgb(240, 65, 91);
+                }
+            }
             
         }
-
 
         //Drag Form
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -66,16 +86,6 @@ namespace Broker_Management
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        //Overidden Methods
-        protected override void WndProc(ref Message m)
-        {
-            const int WM_SYSCOMMAND = 0x0083;
-            if (m.Msg == WM_SYSCOMMAND && m.WParam.ToInt32() == 1)
-            {
-                return;
-            }
-            base.WndProc(ref m);
-        }
 
         //Events Methods
         private void Form1_Resize(object sender, EventArgs e)

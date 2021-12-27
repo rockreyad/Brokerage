@@ -122,35 +122,26 @@ namespace Broker_Management
             labelTimer.Text = time;
         }
 
-        //Drag Form
-        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-        private extern static void ReleaseCapture();
+        //Move Window
+        public const int WM_NCLBUTTONDOWN = 0xA1;
+        public const int HTCAPTION = 0x2;
 
-        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+        [DllImport("User32.dll")]
+        public static extern bool ReleaseCapture();
+
+        [DllImport("User32.dll")]
+        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
 
         private void panelTitleBar_MouseDown(object sender, MouseEventArgs e)
         {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
-
-        private void panelTitleBar_MouseDown_1(object sender, MouseEventArgs e)
-        {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, WM_NCLBUTTONDOWN, HTCAPTION, 0);
+            }
         }
 
         //Overidden Methods
-        protected override void WndProc(ref Message m)
-        {
-            const int WM_SYSCOMMAND = 0x0083;
-            if(m.Msg == WM_SYSCOMMAND && m.WParam.ToInt32() == 1)
-            {
-                return;
-            }
-            base.WndProc(ref m);
-        }
 
         //Events Methods
         private void Form1_Resize(object sender, EventArgs e)
@@ -423,5 +414,6 @@ namespace Broker_Management
             EditClient editClient = new EditClient();
             editClient.ShowDialog();
         }
+
     }
 }

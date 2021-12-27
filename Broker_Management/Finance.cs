@@ -13,7 +13,6 @@ namespace Broker_Management
 {
     public partial class Finance : Form
     {
-        Timer timer = new Timer();
         //Fileds
         private int borderSize = 2;
 
@@ -27,56 +26,10 @@ namespace Broker_Management
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //timer interval
-            timer.Interval = 1000; // in milliseconds
-            timer.Tick += new EventHandler(this.timer_Tick);
-
-            //start timer when form loads
-            timer.Start(); //this will use timer_Tick() method
+            
         }
 
-        //timer eventhandler
-        private void timer_Tick(object sender, EventArgs e)
-        {
-            //get current time
-            int hh = DateTime.Now.Hour;
-            int mm = DateTime.Now.Minute;
-            int ss = DateTime.Now.Second;
-
-            //time
-            string time = "";
-
-            //padding leading zero
-            if (hh < 10)
-            {
-                time += "0" + hh;
-            }
-            else
-            {
-                time += hh;
-            }
-            time += ":";
-            if (mm < 10)
-            {
-                time += "0" + mm;
-            }
-            else
-            {
-                time += mm;
-            }
-            time += ":";
-            if (ss < 10)
-            {
-                time += "0" + ss;
-            }
-            else
-            {
-                time += ss;
-            }
-
-            //Update label
-
-        }
+     
 
         //Drag Form
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -97,16 +50,6 @@ namespace Broker_Management
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        //Overidden Methods
-        protected override void WndProc(ref Message m)
-        {
-            const int WM_SYSCOMMAND = 0x0083;
-            if (m.Msg == WM_SYSCOMMAND && m.WParam.ToInt32() == 1)
-            {
-                return;
-            }
-            base.WndProc(ref m);
-        }
 
         //Events Methods
         private void Form1_Resize(object sender, EventArgs e)

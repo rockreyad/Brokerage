@@ -49,17 +49,17 @@ namespace Broker_Management
             float fee = Int32.Parse(textBoxFee.Text);
             float profitCal = 0;
             string profit = Convert.ToString(profitCal);
-            if (checkBoxDone.Checked==true)
+            if (checkBoxDone.Checked == true)
             {
                 status = "Complete";
-                 profitCal = dealAmmount * (fee / 100);
-                 profit = Convert.ToString(profitCal);
+                profitCal = dealAmmount * (fee / 100);
+                profit = Convert.ToString(profitCal);
             }
             else
             {
                 status = "Incomplete";
             }
-           
+
 
             Con.Open();
             SqlCommand cmd = new SqlCommand("insert into RecordInfo(date,clientName,purpose,dealAmmount,fee,profit,status) values(@date,@clientName,@purpose,@dealAmmount,@fee,@profit,@status)", Con);
@@ -87,7 +87,7 @@ namespace Broker_Management
         }
 
         //timer eventhandler
-       
+
 
         //Drag Form
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -435,7 +435,7 @@ namespace Broker_Management
 
         private void checkBoxDone_CheckedChanged(object sender, EventArgs e)
         {
-            if(checkBoxDone.Checked)
+            if (checkBoxDone.Checked)
             {
                 status = checkboxValue();
             }
@@ -443,7 +443,7 @@ namespace Broker_Management
             {
                 status = "Incomplete";
             }
-            
+
         }
     }
 }

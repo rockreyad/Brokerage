@@ -65,18 +65,6 @@ namespace Broker_Management
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
-
-        //Overidden Methods
-        protected override void WndProc(ref Message m)
-        {
-            const int WM_SYSCOMMAND = 0x0083;
-            if (m.Msg == WM_SYSCOMMAND && m.WParam.ToInt32() == 1)
-            {
-                return;
-            }
-            base.WndProc(ref m);
-        }
-
         //Events Methods
         private void Form1_Resize(object sender, EventArgs e)
         {

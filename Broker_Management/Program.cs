@@ -16,7 +16,7 @@ namespace Broker_Management
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm());
+            Application.Run(new Record());
         }
     }
 }
